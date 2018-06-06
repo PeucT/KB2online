@@ -35,8 +35,22 @@ public class MainGameController {
             e.printStackTrace();
         }
 
+
+        checkReturn(map);
+
         modelAndView.addObject("map", map);
 
         return modelAndView;
+    }
+
+
+    private void checkReturn(WorldMap map){
+         for (int i = 0; i < map.getMap().length; i++){
+             for (int j = 0; j < map.getMap()[0].length; j++){
+                 if (map.getMap()[i][j].getMapObjectType() == 3) {
+                     System.out.printf("x=%d, y=%d, object=%s%n", j, i, "Barracks");
+                 }
+             }
+         }
     }
 }

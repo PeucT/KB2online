@@ -19,8 +19,8 @@ public class Main {
         if (map.getMap()[0][0] != null) {
             for (int i = 0; i < map.getMap().length; i++) {
                 for (int j = 0; j < map.getMap()[0].length; j++){
-                    if (!((TerrainObject)map.getMap()[i][j]).getType().getName().equals(TerrainTypeEn.GLADE)) {
-                        System.out.print(((TerrainObject) map.getMap()[i][j]).getType().getName().toString() + " ");
+                    if (!((map.getMap()[i][j]).getObjectType() == TerrainTypeEn.GLADE.ordinal() )) {
+                        System.out.print(map.getMap()[i][j].getObjectType());
                     } else {
                         System.out.print("      ");
                     }

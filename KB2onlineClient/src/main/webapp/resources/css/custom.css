@@ -1,0 +1,11 @@
+img {
+    padding: 0px;
+}
+
+.entry {
+    float: left;
+}
+
+.gameField {
+    width: 4800px;
+}

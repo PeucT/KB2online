@@ -1,9 +1,6 @@
 package com.anel.kb2server.util;
 
 
-import com.anel.kb2server.entities.TerrainObject;
-import com.anel.kb2server.entities.TerrainType;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;

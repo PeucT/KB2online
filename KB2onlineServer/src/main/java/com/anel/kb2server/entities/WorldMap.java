@@ -6,13 +6,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * Created by ArchMage on 29.05.18.
  */
 public class WorldMap {
-    private AbstractMapObject[][] map;
+    private MapObject[][] map;
 
     @JsonIgnore
     private int stageId;
 
     public WorldMap(Integer width, Integer height) {
-        this.map = new AbstractMapObject[height][width];
+        this.map = new MapObject[height][width];
     }
 
     public int getStageId() {
@@ -23,11 +23,11 @@ public class WorldMap {
         this.stageId = stageId;
     }
 
-    public AbstractMapObject[][] getMap() {
+    public MapObject[][] getMap() {
         return map;
     }
 
-    public void setMap(AbstractMapObject[][] map) {
+    public void setMap(MapObject[][] map) {
         this.map = map;
     }
 }

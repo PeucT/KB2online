@@ -1,0 +1,10 @@
+ResType 1 - gold;
+ResType 2 - exp;
+ResType 3 - wood;
+ResType 4 - stone;
+
+Terrain 1 - WATER;
+Terrain 2 - GLADE;
+Terrain 3 - FOREST;
+Terrain 4 - CLIFFS;
+Terrain 5 - DESERT;
